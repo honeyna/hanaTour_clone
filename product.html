@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어 : 꿈꾸는 대로, 펼쳐지다</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/하나라이브.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./js/rolling.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="login_wrap">
+                <ul>
+                    <li>
+                        <a href="./로그인.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="./회원가입.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo_wrap">
+                <div class="logo_left">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="images/logo.png" alt="hanatour_logo">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="box_search">
+                            <input type="search" id="input_keyword" maxlength="30" placeholder="검색어를 입력해 주세요.">
+                            <button type="button">
+                                <img src="./images/ico-search.png" alt="search">
+                            </button>
+                        </div>
+                    </div>
+                    <span class="hot">HOT</span>
+                    <div class="rolling_box">
+                        <ul id ="rolling_box">
+                            <li class="card_sliding" id ="first"><p></p></li>
+                            <li class="" id ="second"><p></p></li>
+                            <li class="" id ="third"><p></p></li>
+                        </ul>
+                        <div class="popular">
+                            <div class="hot_keyword">
+                                <p>인기검색어</p>
+                            </div>
+                            <a href="#">일본</a>
+                            <a href="#">다낭</a>
+                            <a href="#">괌</a>
+                            <a href="#">오사카</a>
+                            <a href="#">대만</a>
+                            <a href="#">싱가포르</a>
+                            <a href="#">코타키나발루</a>
+                            <a href="#">보라카이</a>
+                            <a href="#">후쿠오카</a>
+                            <a href="#">삿포로</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_right">
+                    <ul>
+                        <li class="my_menu">
+                            <a href="#" id="my_menu">
+                                <img src="./images/ico-mymenu.png" alt="">
+                                <p>마이메뉴</p>
+                            </a>
+                            <div class="my_menu_wrap">
+                                <div class="inner">
+                                    <p>
+                                        마이메뉴는<br>
+                                        <span>회원 전용</span> 메뉴 입니다.
+                                    </p>
+                                    <a href="./로그인.html" class="btn">로그인</a>
+                                    <a href="./회원가입.html" class="btn">회원가입</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reservation">
+                            <a href="#" id="reservation">
+                                <img src="./images/ico-reservationhistory.png" alt="">
+                                <p>예약내역</p>
+                            </a>
+                        </li>
+                        <li class="steamed">
+                            <a href="#" id="steamed">
+                                <img src="./images/ico-haeder-choice.png" alt="">
+                                <p>찜</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="menu_wrap">
+                <div class="left">
+                    <div class="menu_all on">
+                        <a href="#">
+                            <img src="./images/ico-hamburgermenu.png" alt="메뉴">
+                            전체메뉴
+                        </a>
+                    </div>
+                    <div class="menu_all_inner ">
+                        <div class="inner">
+                            <a href="#" class="close"></a>
+                            <div class="inner_wrap">
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                해외여행
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        해외여행 홈
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                항공
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        항공예약
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                테마여행
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        허니문
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        해외골프
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        제우스
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        MICE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                호텔
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        해외호텔
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        국내숙박
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                투어/입장권
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        투어/입장권 홈
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        전체 도시
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        제우스
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        MICE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                제주/국내여행
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        제주/국내여행
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        제주렌터카
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        국내골프
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                혜택/이벤트
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        이벤트
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        할인/혜택
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        여행기획전
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl class="connect">
+                                        <dt>
+                                            연계서비스
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        하나투어상품권
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        포켓와이파
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        For Foreign Travellers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="connect">
+                                        <dt>
+                                            하나투어 셀렉션
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        하나LIVE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        마일리지 클럽
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        하나Original
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>
+                                            <ul>
+                                                <li><a href="#">기업출장/단체</a></li>
+                                                <li><a href="#">하나투어 기프트카드</a></li>
+                                                <li><a href="#">여행자보험</a></li>
+                                                <li><a href="#"></a></li>
+                                                <li><a href="#"></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>
+                                            <ul>
+                                                <li><a href="#">하나팩2.0 (개런티 프로그램)</a></li>
+                                                <li><a href="#">SAFETY&JOY</a></li>
+                                                <li><a href="#">우리끼리</a></li>
+                                                <li><a href="#"></a></li>
+                                                <li><a href="#"></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list_menu_wrap">
+                        <li>
+                            <a href="./해외여행.html">해외여행</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            투어/입장권 홈
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            동남아/대만
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            일본
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            남태평양
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            유럽/중동
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            미주
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            중국/홍콩/마카오
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내/해외 렌터카
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">제주/국내여행</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            제주/국내여행
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            제주도렌터카
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            울릉도
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            내나라여행
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내골프
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            단독여행문의
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">항공</a>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">호텔</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            해외호텔
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내숙박
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">투어/입장권</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            투어/입장권 홈
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            동남아/대만
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            일본
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            남태평양
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            유럽/중동
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            미주
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            중국/홍콩/마카오
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내/해외 렌터카
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./해외여행.html">허니문</a></li>
+                        <li><a href="./해외여행.html">골프</a></li>
+                        <li><a href="./해외여행.html">제우스</a></li>
+                        <li><a href="./해외여행.html">MICE</a></li>
+                        <li><a href="./하나라이브.html">하나LIVE</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="./여행기획전.html">여행기획전</a>
+                        </li>
+                        <li>
+                            <a href="./맞춤여행.html">맞춤여행</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="country">
+            <img src="https://image.hanatour.com/usr/static/img2/nation/AU.gif" alt="">
+            <p>
+                <span>호주: </span>
+                <strong>여행 가능</strong>
+                여행 전 입국 규정을 확인해 주세요
+            </p>
+        </div>
+        <div class="product_wrap">
+            <div class="product_img">
+                <img src="https://image.hanatour.com/usr/cms/resize/800_0/2018/07/27/10000/22d6cf85-8964-4a8f-9f83-db45b5e24ef2.jpg" alt="">
+                <div class="option_wrap">
+                    <span class="prod_code">
+                        상품코드
+                        <strong>PAP101230616TWC</strong>
+                    </span>
+                    <div class="cont">
+                        <a href="#none" class="btn_print">
+
+                        </a>
+                        <a href="#none" class="btn_share">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product_info">
+                <div class="info_wrap">
+                    <span class="coupon">
+                        다다익선, [마감] 하나만믿고, [실속+]
+                    </span>
+                    <div class="btn_product">
+                        <a>
+                            여행상품 핵심정보
+                        </a>
+                    </div>
+                </div>
+                <div class="save">
+                    <span>
+                        세이브
+                    </span>
+                </div>
+                <div class="text_wrap">
+                    <strong class="item_title">
+                        호주 시드니+뉴질랜드 남북섬 10일 #밀포드사운드 #와이토모반딧불동굴 #시드니하버크루즈
+                    </strong>
+                    <p class="txt">
+                        호주 시드니의 랜드마크 찍고, 뉴질랜드 남북섬까지 여행하는 일정입니다.
+                    </p>
+                </div>
+                <div class="option">
+                    <span class="hash_group">
+                        <span>#관광</span>
+                    </span>
+                    <div class="cont">
+                        <span class="ico star">
+                            4.3
+                        </span>
+                        <span class="ico bubble">
+                            231
+                        </span>
+                    </div>
+                </div>
+                <div class="package_wrap">
+                    <span class="item item01">
+                        <span class="tit">
+                            8박 10일
+                        </span>
+                    </span>
+                    <span class="item item02">
+                        <span class="tit">
+                            국적기
+                        </span>
+                    </span>
+                    <span class="item item03">
+                        <span class="tit">
+                            쇼핑 6회
+                        </span>
+                    </span>
+                    <span class="item item04">
+                        <span class="tit">
+                            단체여행
+                        </span>
+                    </span>
+                    <span class="item item05">
+                        <span class="tit">
+                            가이드경비<br>
+                            AUD 100
+                        </span>
+                    </span>
+                    <span class="item item06">
+                        <span class="tit">
+                            선택관광있음
+                        </span>
+                    </span>
+                </div>
+                <div class="decide_wrap">
+                    <span class="item">출발예정</span>
+                    <span class="item">항공예정</span>
+                    <span class="item">일정예정</span>
+                    <span class="item">호텔예정</span>
+                    <span class="item">가격예정</span>
+                </div>
+                <div class="price_wrap">
+                    <div class="person">
+                        성인 1인
+                    </div>
+                    <strong class="price">
+                        4,519,000
+                        <span>원</span>
+                    </strong>
+                </div>
+            </div>
+        </div>
+        <div class="banner_wrap">
+            <a>
+                <img src="https://image.hanatour.com/usr/static/img/pc/com/banner_safe_campaign.png" alt="안심결제 캠페인">
+            </a>
+            <a>
+                <img src="https://image.hanatour.com/usr/static/img/pc/com/banner_fair_price.png" alt="Fair Price 공정한 가격, 즐거운 여행">
+            </a>
+            <a>
+                <img src="https://image.hanatour.com/usr/static/img2/pc/com/banner_ccm_mark.jpg" alt="소비자 중심경영을 실천합니다.">
+            </a>
+        </div>
+        <div class="product_detail">
+            <div class="inner_left">
+                <div class="summary">
+                    <div class="text_wrap">
+                        <strong class="tit">
+                            여행 주요일정
+                        </strong>
+                        <div class="right_con">
+                            <div class="btn_con">
+                                <a href="#none" class="btn_gray">
+                                    항공여정보기
+                                </a>
+                            </div>
+                            <div class="btn_con">
+                                <a href="#none" class="btn_main">
+                                다른 출발일 선택
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel_plans">
+                        <dl>
+                            <dt>일정</dt>
+                            <dd>
+                                <p class="item_text">
+                                    <span class="night_days">
+                                        5박 7일
+                                    </span>
+                                    <span class="air_name">
+                                        <img src="https://image.hanatour.com/usr/static/img/airline/TW.png" alt="">
+                                        티웨이항공
+                                    </span>
+                                </p>
+                                <p class="item_text air_info">
+                                    <span>
+                                        출발 : 2023.06.16(금) 
+                                    </span>
+                                    <span class="air_time">
+                                        22:35 
+                                        <span class="after">
+                                            2023.06.17(토) 09:50 
+                                        </span>
+                                    </span>
+                                    <span class="info">
+                                        <span class="flight">TW0501</span>
+                                        총 09시간 15분  소요
+                                    </span>
+                                </p>
+                                <p class="item_text air_info">
+                                    <span>
+                                        도착 : 2023.06.22(목) 
+                                    </span>
+                                    <span class="air_time">
+                                        11:45  
+                                        <span></span>
+                                        <span class="after">
+                                            2023.06.22(목) 21:50 
+                                        </span>
+                                    </span>
+                                    <span class="info">
+                                        <span class="flight">TW0502</span>
+                                        총 12시간 05분  소요
+                                    </span>
+                                </p>
+                            </dd>
+                            <dt>여행도시</dt>
+                            <dd>
+                                <span class="info">
+                                    시드니(5)
+                                </span>
+                            </dd>
+                            <dt>예약현황</dt>
+                            <dd>
+                                <span class="info">
+                                    예약 : 12명
+                                </span>
+                                <span class="info">
+                                    좌석 : 16석(최소출발 : 성인8명)
+                                </span>
+                                <span class="tooltip">
+                                    <img src="https://image.hanatour.com/usr/static/img2/pc/com/icon_help@3x.png" alt="">
+                                    <span class="tooltiptext">
+                                        최소 출발인원은 성인기준입니다.<br>
+                                        당사는 최저행사인원이 충족되지
+                                        아니하여 여행계약을 해제하는 경우 여행개시 7일전까지 여행자에게 통지하여야
+                                        합니다.<br>
+                                        당사가 여행참가자 수 미달로 전항의 기일내 통지를 하지 아니하고 계약을
+                                        해제하는 경우 이미 지급받은 계약금 환급 외에 다음 각 항목의 1의 금액을
+                                        여행자에게 배상하여야 합니다.<br>
+                                        가. 여행개시 7일전(~7)까지 통지시 : 계약금 환급<br>
+                                        나. 여행개시 1일전(6~1)까지 통지시 : 여행요금의 30% 배상<br>
+                                        다. 여행개시 당일 통지시 : 여행요금의 50% 배상
+                                    </span>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <hr class="pkg">
+                <div class="summary">
+                    <div class="text_wrap">
+                        <strong class="tit">
+                            상품가격
+                        </strong>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>
+                                    성인
+                                    <p class="txt">
+                                        만 12세 이상
+                                    </p>
+                                </th>
+                                <th>
+                                    아동
+                                    <p class="txt">
+                                        만 12세 미만
+                                    </p>
+                                </th>
+                                <th>
+                                    유아
+                                    <p class="txt">
+                                        만 2세 미만
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>기본상품</td>
+                                <td>
+                                    <span class="price">
+                                        1,239,000
+                                    </span>
+                                    원
+                                    <p class="txt s">
+                                        유류할증료 91,600원 포함
+                                    </p>
+                                </td>
+                                <td>
+                                    <span class="price">
+                                        1,239,000
+                                    </span>
+                                    원
+                                    <p class="txt s">
+                                        유류할증료 91,600원 포함
+                                    </p>
+                                </td>
+                                <td>
+                                    <span class="price">
+                                        114,740
+                                    </span>
+                                    원
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="price_info">
+                        <ul>
+                            <li>
+                                유류할증료 및 제세공과금은 유가와 환율에 따라 변동될 수 있습니다.
+                            </li>
+                            <li>
+                                아동, 유아요금은 성인 2인과 같은 방 사용조건이며, 미충족시 아동추가 요금이 발생합니다.
+                            </li>
+                            <li>
+                                1인 객실 사용시 추가요금 발생됩니다. 
+                            </li>
+                            <li>
+                                1인 객실 사용료 : 500,000원
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="pkg">
+                <div class="summary">
+                    <div class="text_wrap theme">
+                        <strong class="tit">
+                            테마소개
+                        </strong>
+                        <div class="right_con">
+                            <div class="btn_theme">
+                                <a href="#none">
+                                    관광
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme_box">
+                        <p class="tit">
+                            <strong>관광</strong>
+                        </p>
+                        <p class="txt">
+                          랜드마크 중심의 여행!<br>
+                          핵심 관광지를 보다 여유롭게 보고, 느끼고, 체험하는 시간                
+                        </p>
+                    </div>
+                    <div class="promotion_box">
+                        <p class="img_tit">
+                            <strong>
+                                프로모션
+                            </strong>
+                        </p>
+                        <div class="img_text">
+                            <strong class="tit">[마감] 하나만믿고</strong>
+                            <p class="txt">
+                                <b>
+                                    ※ 해당 프로모션은 마감되었습니다.  
+                                </b><br><br>
+                                떠나자, 하나만 믿고! ★ 특별 혜택!<br>
+                                2022년 10월 17일 ~ 2022년 11월 13일 예약 시, 상품별 혜택을 드려요.<br><br>
+
+                                ▶꼭 읽어주세요!<br>
+                                - 조건 : [하나만믿고]프로모션 반영된 상품, 신규 예약자 한정<br>
+                                - 해당 프로모션은 당사 사정에 의해 사전 공지 없이 혜택이 변경되거나, 종료될 수 있습니다.<br><br>
+
+                                ▶ 객실당 와인 1병 증정
+                            </p>
+                        </div>
+                    </div>
+                    <div class="promotion_box">
+                        <p class="img_tit">
+                            <strong>
+                                프로모션
+                            </strong>
+                        </p>
+                        <div class="img_text">
+                            <strong class="tit">다다익선</strong>
+                            <p class="txt">
+                                ▶ 다다익선 프로모션 [뭉쳐야 할인]◀<br><br>
+    
+                                ▣ 대상 : <br>
+                                해당 프로모션이 적용된 인천출발 패키지 예약 고객 <br><br>
+    
+                                ▣ 내용 : <br>
+                                4명 예약시 팀당 20만원 할인!<br>
+                                6명 예약시 팀당 35만원 할인!<br>
+                                8명 예약시 팀당 50만원 할인!<br><br>
+    
+    
+                                ▣ 조건 :<br>
+                                *성인 한정, 랜드조인 제외 <br>
+                                *계약금 결제일 기준 할인 적용   <br>
+                                *동일 예약코드 기준, 동일 대리점 예약건의 경우 그룹 분리하여 적용 불가
+                            </div>
+                            </p>
+                    </div>
+                </div>
+                <hr class="pkg">
+                <div class="summary">
+                    <ul class="tabs">
+                        <li class="keypoint">
+                            <a href="#point01">
+                                핵심
+                            </a>
+                        </li>
+                        <li class="tour">
+                            <a href="point02">
+                                관광
+                            </a>
+                        </li>
+                        <li class="hotel">
+                            <a href="point03">
+                                호텔
+                            </a>
+                        </li>
+                        <li class="meal">
+                            <a href="point04">
+                                식사
+                            </a>
+                        </li>
+                        <li class="traffic">
+                            <a href="point05">
+                                교통
+                            </a>
+                        </li>
+                        <li class="insurance">
+                            <a href="point06">
+                                보험
+                            </a>
+                        </li>
+                        <li class="etc">
+                            <a href="point07">
+                                기타
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="panels">
+                        <div id="point01">
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    하나팩 세이브
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    가성비, 효율성, 편리함을 담은 실속형 상품입니다.<br>
+                                    합리적으로 인하된 가격으로 선택관광이 진행됩니다.<br>
+                                    전통적인 패키지 상품으로  단체 쇼핑센터를 방문하며,<br>
+                                    가이드&기사 경비가 불포함되어 추가 경비가 있습니다.
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    상품 핵심포인트
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 전일정 3성급 호텔 이용<br>
+                                    ② 아름다운 해변 저비스베이 돌핀크루즈<br>
+                                    ③ 바다의 소리가 들리는 울릉공 데이투어<br>
+                                    ④ 블루마운틴 국립공원 힐링 부쉬워킹<br>
+                                    ⑤ 세계 3대 미항 한바퀴! 시드니하버 티 크루즈<br>
+                                    ⑥ 귀여운 코알라와 캥거루 만나기! 시드니 동물원<br>
+                                    ⑦ 하늘에서 바라보는 360도 시드니! 시드니타워<br>
+                                    ⑧ 오페라하우스, 하버브릿지 등 시드니 명소투어<br>
+                                    ⑨ 서퍼들로 활기찬 본다이 비치 동부투어<br>
+                                    ⑩ 요즘 뜨는 시드니 뷰맛집! 발모랄 비치
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    [하나투어 단독] 블랙히스 빌리지 워킹투어
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    호주 가을 여행, 4주간의 황금빛 향연<br>
+                                    한국의 봄을 떠나, 호주의 가을 매력을 느껴보세요.
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    하나투어와 함께, 즐거운 안심여행 "SAFETY&JOY"
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 응급/위기상황 발생 시 체계적인 현장 지원<br>
+                                    ② 안전/위생지침 준수업체 이용(차량/호텔/선박/식당 등)<br>
+                                    ③ 국가별 방역지침 준수/코로나19 확진자 지원 (바로가기)
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    해외 긴급 의료지원 서비스 “어시스트카드"
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 365일 24시간 한국 알람 센터 운영<br>
+                                    ② 여행 중 긴급 도움 필요시 의료 지원 / 긴급상황 지원<br>
+                                    ③ 서비스 상세안내 (바로가기)
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="point02">
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    유네스코 세계유산! 블루마운틴
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 유칼립투스가 가득한 숲속에서 피톤치드 마시며 부쉬워킹
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    아름다운 자연을 감싸는 눈부신 햇살, 저비스베이
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 남태평양의 돌고래를 찾아! 저비스베이 돌핀 크루즈<br>
+                                    ② 호주 전통 와이너리에서 내 입에 딱 맞는 와인 찾기!<br>
+                                    ③ 고풍스러운 건물과 오랜 역사를 가진 마을 베리타운
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    바다의 소리가 들리는 울릉공
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 신비한 자연현상 블로우홀<br>
+                                    ② 확 트인 파노라마 같은 전경을 감상할 수 있는 서브라임포인트<br>
+                                    ③ 해안 절벽이 한눈에 들어오는 볼드힐 전망대<br>
+                                    ④ 유칼립투스 숲을 지나 아름다운 해변으로 떠나는 환상의 드라이브
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    호주의 랜드마크, 시드니
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 호주까지 왔는데, 여길 빼놓을 순 없죠<br>
+                                    　- 랜드마크이자 유명 건축물 중 하나인, 오페라하우스<br>
+                                    　- 세계에서 4번째로 긴 다리, 하버브릿지<br>
+                                    　- 호주인들의 쉼터, 로얄보타닉 가든과 하이드파크<br>
+                                    　- 호주 원주민과 현대 작가들의 작품을 볼 수 있는, 현대 미술관<br>
+                                    　- 호주의 역사를 돌아볼수 있는, 록스투어<br>
+                                    ② 크루즈에 올라 시드니 하버 한바퀴!  티크루즈 <br>
+                                    ③ 시드니 도심에서 멀지 않은 곳에 있는 피서지?!<br>
+                                    　- 햇볕과 바람이 멋있는 해안 산책로 갭 파크와 왓슨스베이 <br>
+                                    ④ 호주에서 만나는 귀여운 코알라와 캥거루, 시드니 동물원<br>
+                                    ⑤ 하늘에서 바라보는 시드니 360도, 시드니 타워 <br>
+                                    ⑥ 시드니 항구의 아름다운 뷰를 즐길 수 있는 진짜 뷰맛집! 발모랄 비치 부쉬워킹
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="point03">
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    전일정 3성급 이상 호텔 이용
+                                </strong>
+                            </div>
+                        </div>
+                        <div id="point04">
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    여행의 즐거움을 더해줄 식사
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 블루마운틴 근처에서 맛보는 스테이크<br>
+                                    ② 호주인들이 즐겨먹는  피쉬 앤 칩스<br>
+                                    ③ 도심 속 캐쥬얼 레스토랑 시로코  현지식<br>
+                                    ④ 시드니 시티 탱크스트림 호텔 내  캐주얼 다이닝 레스토랑 르 쁘띠 플로의 와규 스테이크<br>
+                                    ⑤ 시드니 중식 맛집 하나투어 전용 레스토랑 함지박 중화요리<br>
+                                    ⑥ 여행 중에도 그리운 한식
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="point05">
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    1억원 여행자보험
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    해외치료비 최대 보장 한도 [상해/질병]500만원<br>
+                                    [휴대품 도난/파손] 50만원보상<br>
+                                    * 국가/연령에 따라 보장내용이 상이할 수 있습니다.<br>
+                                    * 자세한 내용은 <b>보장내역 자세히보기(클릭)</b> 확인해주시기 바랍니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="point06">
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    출입국 정보
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    - 출국 전 여행 필요서류/준비사항<br>
+                                    * 호주 비자 - 모바일 Australian ETA 앱 다운로드 후 개별발급<br>
+                                    * 보다 자세한 사항은  [일정 1일차]를 참고해주세요.
+                                </li>
+                            </ul>
+                            <ul class="list_note">
+                                <li>
+                                    - 해외 입국 후 검역 규정/절차<br>
+                                    * 호주 도착 후 격리 없이 바로 여행 가능  
+                                </li>
+                            </ul>
+                            <div class="text_wrap">
+                                <strong class="tit">
+                                    호주 여행 시 안내 사항
+                                </strong>
+                            </div>
+                            <ul class="list_note">
+                                <li>
+                                    ① 최소인원 충족시 출발 가능합니다.<br>
+                                    ② 출입국 절차에 따라 일정 변동이 있을 수 있습니다. <br>
+                                    ③ 호주는 우리나라와 계절이 반대입니다. 현지 도착 후<br>
+                                    　행사가 바로 진행되기 때문에 공항 도착 후에 옷을<br>
+                                    　갈아입을 시간을 드립니다. 바로 갈아입으실 수 있도록<br>
+                                    　짐을 챙길 때 손쉽게 꺼낼 수 있는 곳에 옷을 넣어주시기<br>
+                                    　바랍니다.<br>
+                                    ④ 행사는 현지에서 같은 일정&다른 항공의 하나투어<br>
+                                    　 팀과 조인하여 진행될 수 있습니다. 총 행사 인원이<br>
+                                    　 궁금하신 고객님께서는 출발 3~4일 전 확정 일정을<br>
+                                    　 확인하신 후 예약하신 여행사로 문의 부탁드립니다.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="https://image.hanatour.com/usr/manual/update/pc/schedule/1c/010.jpg" alt="">
+                </div>
+            </div>
+            <div class="inner_right">
+                <div class="text_wrap">
+                    <strong class="tit">
+                        인원선택
+                    </strong>
+                </div>
+                <div class="con_wrap">
+                    <div class="member_count">
+                        <ul>
+                            <li>
+                                <p class="tit">
+                                    <span class="txt">
+                                        성인
+                                    </span>
+                                    <span class="price">
+                                        4,519,000원
+                                    </span>
+                                </p>
+                                <span class="num_count">
+                                    <button class="btn_decrement"></button>
+                                    <span class="counter">1</span>
+                                    <button class="btn_increment"></button>
+                                </span>
+                            </li>
+                            <li>
+                                <p class="tit">
+                                    <span class="txt">
+                                        아동
+                                    </span>
+                                    <span class="price">
+                                        3,900,400원
+                                    </span>
+                                </p>
+                                <span class="num_count">
+                                    <button class="btn_decrement"></button>
+                                    <span class="counter">0</span>
+                                    <button class="btn_increment"></button>
+                                </span>
+                            </li>
+                            <li>
+                                <p class="tit">
+                                    <span class="txt">
+                                        유아
+                                    </span>
+                                    <span class="price">
+                                        450,000원
+                                    </span>
+                                </p>
+                                <span class="num_count">
+                                    <button class="btn_decrement"></button>
+                                    <span class="counter">0</span>
+                                    <button class="btn_increment"></button>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="pkg">
+                    <div class="total_wrap">
+                        <div class="total_price">
+                            <p class="tit">
+                                총 금액
+                            </p>
+                            <p class="con">
+                                4,519,000
+                                <em>원</em>
+                            </p>
+                        </div>
+                        <div class="total_text">
+                            <p class="txt">       
+                                유류할증료&제세공과금 포함 
+                            </p>
+                            <p class="txt billiard">
+                                적립 불가 상품입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="pkg">
+                    <div class="con_foot">
+                        <div class="btn_wrap">
+                            <div class="btn_con">
+                                <a href="#none" class="btn_reservation">
+                                    예약하기
+                                </a>
+                            </div>
+                            <div class="btn_con">
+                                <a href="#none" class="btn_link">
+                                    <span class="choic"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="benefit_link">
+                            <a>
+                                <span class="card"></span>
+                                카드/할인 혜택
+                            </a>
+                            <span class="divider_line"></span>
+                            <a>
+                                <span class="mileage"></span>
+                                추가 적립/할인
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="info">
+            <div class="service_info">
+                <div class="service_con">
+                    <div class="sevice_fl">
+                        <dl>
+                            <dt>공지</dt>
+                            <dd>
+                                <하나LIVE> 22년 11월 24일 방송 이벤트 당첨자 안내 (스타벅스 기프티콘)
+                                <a href="">더보기</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="sevice_fr">
+                        <ul class="sns_list">
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_naverblog.png" alt="naverblog">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_kakaoplus.png" alt="kakaoplus">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_youtube.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_kakaostory.png" alt="kakaostory">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_fl">
+                    <div class="link_company">
+                        <ul>
+                            <li>
+                                <a href="">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="">이용약관</a>
+                            </li>
+                            <li>
+                                <a href=""><strong>개인정보처리방침</strong></a>
+                            </li>
+                            <li>
+                                <a href="">여행약관</a>
+                            </li>
+                            <li>
+                                <a href="">해외여행자보험</a>
+                            </li>
+                            <li>
+                                <a href="">마케팅제휴</a>
+                            </li>
+                            <li>
+                                <a href="">공인인증예약센터 검색</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info_company">
+                        <div class="info_wrap">
+                            <div class="info_add">
+                                <span><strong>(주)하나투어</strong></span>
+                                <span>대표 : 송미선, 육경건</span>
+                                <span>주소 : (03161)서울특별시 종로구 인사동 5길 41</span>
+                            </div>
+                            <div class="info_tel">
+                                <span>사업자등록번호 : 102-81-39440</span>
+                                <span><a href="#">사업자정보확인</a></span>
+                                <span>통신판매업신고번호 : 종로01-1806호</span>
+                                <span>관광사업 등록번호 : 제1993-000006호</span>
+                            </div>
+                            <div class="info_fax">
+                                <span>개인정보 보호책임자 : 채철훈</span>
+                                <span>영업보증보험 : 22억 1천만원 가입</span>
+                                <span>팩스 : 02-734-0392</span>
+                                <span>이메일 : <a href="">15771233@hanatour.com</a></span>
+                            </div>
+                        </div>
+                        <div class="info_customer">
+                            <strong>
+                                <span>
+                                    <img src="./images/ico-callcenter.png" alt="">
+                                    고객센터
+                                </span>
+                                1577-1233
+                            </strong>
+                            <strong>
+                                <span>
+                                    <img src="./images/ico-callcenter.png" alt="">
+                                    해외항공권문의
+                                </span>
+                                1899-1833
+                            </strong>
+                        </div>
+                        <p class="info_guide">
+                                ※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.<br>
+                                ※ 하나투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.
+                        </p>
+                        <p class="copyright">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

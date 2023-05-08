@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어 : 꿈꾸는 대로, 펼쳐지다</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/하나라이브.css">
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/rolling.js"></script>
+    <script defer src="./js/live.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="login_wrap">
+                <ul>
+                    <li>
+                        <a href="./로그인.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="./회원가입.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo_wrap">
+                <div class="logo_left">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="images/logo.png" alt="hanatour_logo">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="box_search">
+                            <input type="search" id="input_keyword" maxlength="30" placeholder="검색어를 입력해 주세요.">
+                            <button type="button">
+                                <img src="./images/ico-search.png" alt="search">
+                            </button>
+                        </div>
+                    </div>
+                    <span class="hot">HOT</span>
+                    <div class="rolling_box">
+                        <ul id ="rolling_box">
+                            <li class="card_sliding" id ="first"><p></p></li>
+                            <li class="" id ="second"><p></p></li>
+                            <li class="" id ="third"><p></p></li>
+                        </ul>
+                        <div class="popular">
+                            <div class="hot_keyword">
+                                <p>인기검색어</p>
+                            </div>
+                            <a href="#">일본</a>
+                            <a href="#">다낭</a>
+                            <a href="#">괌</a>
+                            <a href="#">오사카</a>
+                            <a href="#">대만</a>
+                            <a href="#">싱가포르</a>
+                            <a href="#">코타키나발루</a>
+                            <a href="#">보라카이</a>
+                            <a href="#">후쿠오카</a>
+                            <a href="#">삿포로</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_right">
+                    <ul>
+                        <li class="my_menu">
+                            <a href="#" id="my_menu">
+                                <img src="./images/ico-mymenu.png" alt="">
+                                <p>마이메뉴</p>
+                            </a>
+                            <div class="my_menu_wrap">
+                                <div class="inner">
+                                    <p>
+                                        마이메뉴는<br>
+                                        <span>회원 전용</span> 메뉴 입니다.
+                                    </p>
+                                    <a href="./로그인.html" class="btn">로그인</a>
+                                    <a href="./회원가입.html" class="btn">회원가입</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reservation">
+                            <a href="#" id="reservation">
+                                <img src="./images/ico-reservationhistory.png" alt="">
+                                <p>예약내역</p>
+                            </a>
+                        </li>
+                        <li class="steamed">
+                            <a href="#" id="steamed">
+                                <img src="./images/ico-haeder-choice.png" alt="">
+                                <p>찜</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="menu_wrap">
+                <div class="left">
+                    <div class="menu_all on">
+                        <a href="#">
+                            <img src="./images/ico-hamburgermenu.png" alt="메뉴">
+                            전체메뉴
+                        </a>
+                    </div>
+                    <div class="menu_all_inner ">
+                        <div class="inner">
+                            <a href="#" class="close"></a>
+                            <div class="inner_wrap">
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                해외여행
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        해외여행 홈
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                항공
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        항공예약
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                테마여행
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        허니문
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        해외골프
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        제우스
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        MICE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                호텔
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        해외호텔
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        국내숙박
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                투어/입장권
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        투어/입장권 홈
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        전체 도시
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        제우스
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        MICE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                제주/국내여행
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        제주/국내여행
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        제주렌터카
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        국내골프
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                혜택/이벤트
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        이벤트
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        할인/혜택
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        여행기획전
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl class="connect">
+                                        <dt>
+                                            연계서비스
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        하나투어상품권
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        포켓와이파
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        For Foreign Travellers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="connect">
+                                        <dt>
+                                            하나투어 셀렉션
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        하나LIVE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        마일리지 클럽
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        하나Original
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="group_list">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>
+                                            <ul>
+                                                <li><a href="#">기업출장/단체</a></li>
+                                                <li><a href="#">하나투어 기프트카드</a></li>
+                                                <li><a href="#">여행자보험</a></li>
+                                                <li><a href="#"></a></li>
+                                                <li><a href="#"></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>
+                                            <ul>
+                                                <li><a href="#">하나팩2.0 (개런티 프로그램)</a></li>
+                                                <li><a href="#">SAFETY&JOY</a></li>
+                                                <li><a href="#">우리끼리</a></li>
+                                                <li><a href="#"></a></li>
+                                                <li><a href="#"></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list_menu_wrap">
+                        <li>
+                            <a href="./해외여행.html">해외여행</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            투어/입장권 홈
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            동남아/대만
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            일본
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            남태평양
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            유럽/중동
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            미주
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            중국/홍콩/마카오
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내/해외 렌터카
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">제주/국내여행</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            제주/국내여행
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            제주도렌터카
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            울릉도
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            내나라여행
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내골프
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            단독여행문의
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">항공</a>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">호텔</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            해외호텔
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내숙박
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./해외여행.html">투어/입장권</a>
+                            <div class="list_sub_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            투어/입장권 홈
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            동남아/대만
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            일본
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            남태평양
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            유럽/중동
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            미주
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            중국/홍콩/마카오
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./해외여행.html">
+                                            국내/해외 렌터카
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./해외여행.html">허니문</a></li>
+                        <li><a href="./해외여행.html">골프</a></li>
+                        <li><a href="./해외여행.html">제우스</a></li>
+                        <li><a href="./해외여행.html">MICE</a></li>
+                        <li><a href="./하나라이브.html">하나LIVE</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="./여행기획전.html">여행기획전</a>
+                        </li>
+                        <li>
+                            <a href="./맞춤여행.html">맞춤여행</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sub_tit">
+        <div class="tit_img">
+            하나Live SHOP 여행을 라이브로!
+        </div>
+    </div>
+    <div class="live_bg">
+        <div class="live">
+            <div class="live_search">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><g fill="currentColor"><g><g><g><path d="M9.5 0C14.738 0 19 4.262 19 9.5c0 2.26-.796 4.335-2.118 5.968l3.679 3.678c.39.391.39 1.024 0 1.415-.196.195-.452.293-.707.293-.256 0-.512-.098-.708-.293l-3.678-3.679C13.835 18.204 11.76 19 9.5 19 4.262 19 0 14.738 0 9.5S4.262 0 9.5 0zm0 2C5.364 2 2 5.364 2 9.5S5.364 17 9.5 17 17 13.636 17 9.5 13.636 2 9.5 2zm0 2c1.335 0 2.591.52 3.536 1.464.39.39.39 1.024 0 1.414-.195.196-.452.293-.707.293-.256 0-.512-.097-.707-.292-1.134-1.134-3.11-1.134-4.244 0-.39.39-1.024.39-1.414-.001-.39-.39-.39-1.024 0-1.414C6.909 4.52 8.165 4 9.5 4z" transform="translate(-320 -13) translate(308 1) translate(12 12) translate(1 1)"></path></g></g></g></g></g></svg>
+                </a>
+            </div>
+            <div class="live_wrap">
+                <div class="slider">
+                    <div class="slider-inner">
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-4076d46951b34bd8a14475b2703308a7/thum/1f12e3dc-b21b-4c2c-83f0-ebc971659d15.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            1.6만
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:08:07
+                                    </div>
+                                </div>
+                                <div class="img_info">
+                                    <div class="product_img">
+                                        <img src="https://dhdfh3vybe18.cloudfront.net/product/hanatour/hanatour-7041ee2f06954174bd352c30335fa72e/thum/f00a1265-de7b-48ad-9a39-4506c8cb4792.jpg?w=96&h=96&f=jpg" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_name">
+                                            [방송상품따라잡기] 신돈 켐핀스키 호텔 방콕
+                                        </div>
+                                        <div class="product_price">
+                                            359,184원~
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [H-Collection] 방콕/발리 럭셔리 호텔
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-5dbc1db54a384f2aafa23972a1cd821e/thum/9f206219-92df-4bf8-9564-eba3f5a4dcb0.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            1.5천
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:10:48
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [퇴근길LIVE] 벨포레 리조트+조식+목장 12만원대~
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/vchanatour-11721a0d93f3437f90d436d59bda0d78/thum/1d36567b-b78f-48f1-9352-caf18000be8c.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            1.3만
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:06:49
+                                    </div>
+                                </div>
+                                <div class="img_info">
+                                    <div class="product_img">
+                                        <img src="https://dhdfh3vybe18.cloudfront.net/product/hanatour/hanatour-769203c3091741a8802ac97c6dd730d8/thum/3b9b251c-e542-4ebc-a683-0e44b8d76892.jpg?w=96&h=96&f=jpg" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_name">
+                                            [방송상품따라잡기][봄특가] 트럼프 인터내셔널 호텔 와이키키
+                                        </div>
+                                        <div class="product_price">
+                                            503,045원~
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [H-Collection] 하와이 럭셔리 호텔
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-87181b62a4a64d87b6aa7d49391dc3f1/thum/9d62ea3c-f961-43db-b865-1d7767ceb0ea.png?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            3.8천
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:14:36
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [봄나들이] 라한셀렉트 경주 #벚꽃성지 #보문호수
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-f9a4ad2ea9f24adabfb0abddf6c9a00b/thum/41b77e58-85dc-42db-84ae-be38b93b6b43.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            824
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:10:08
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [퇴근길LIVE] 롯데월드 부산+해운대 추천 호텔 1박
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-32350e6387334deebaf79ee45fa9644c/thum/10ef1f72-df78-46c7-a162-843bf40733a3.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            5.1천
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:07:08
+                                    </div>
+                                </div>
+                                <div class="img_info">
+                                    <div class="product_img">
+                                        <img src="https://dhdfh3vybe18.cloudfront.net/product/hanatour/hanatour-61f90867431146779463fa1306d0d6ba/thum/e1b8ac25-944e-43c3-ac4e-6878214553c2.jpg?w=96&h=96&f=jpg" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_name">
+                                            [방송상품따라잡기] 싱가포르 5일 #완전핫딜 #1일자유 #센토사데이투어
+                                        </div>
+                                        <div class="product_price">
+                                            899,000원부터~
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [완전핫딜] 싱가포르 5일 #1일자유 #센토사데이투어
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-5538048d90d944ffa96bdc2c77fa2895/thum/a7bc7632-4ce1-4f71-b213-7d5bf3e92a12.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            2.2천
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:11:16
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [퇴근길LIVE] 제주 히든 클리프 호텔 15만원대~
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-4071ec5495714469a797d7fd23bf7e79/thum/998440a4-36dd-4ee6-9067-56c8e126526b.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            1.7천
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:07:21
+                                    </div>
+                                </div>
+                                <div class="img_info">
+                                    <div class="product_img">
+                                        <img src="https://dhdfh3vybe18.cloudfront.net/product/hanatour/hanatour-fb3afe04b7c5462f9ad2410eff027c08/thum/78a47be9-851f-4490-9942-51dd95d09735.jpg?w=96&h=96&f=jpg" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_name">
+                                            [콴타스항공][방송상품따라잡기] 뉴질랜드 일주+호주 시드니 10일
+                                        </div>
+                                        <div class="product_price">
+                                            3,090,000원~
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [핵심일주] 뉴질랜드 일주+호주 시드니 10일
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-2562d6f4c9cb41dd9585fd809e53ad86/thum/ec3b34d6-9d9f-472d-8f34-36c142e6e60e.jpg?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            4.1천
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:07:00
+                                    </div>
+                                </div>
+                                <div class="img_info">
+                                    <div class="product_img">
+                                        <img src="https://dhdfh3vybe18.cloudfront.net/product/hanatour/hanatour-3b5374e46b1a4722b0ba5b71c703b2ba/thum/a9450669-e562-4571-8c3a-379232608c3f.jpg?w=96&h=96&f=jpg" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_name">
+                                            [인천출발][방송상품따라잡기] 다낭/후에 4, 6일 #시내5성호텔 #후에왕궁투어
+                                        </div>
+                                        <div class="product_price">
+                                            519,000원부터~
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [시내5성호텔] 다낭/후에 4, 5일 #후에왕궁투어
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card_wrap">
+                                <img src="https://dhdfh3vybe18.cloudfront.net/broadcast/hanatour/lkhanatour-5a742f6049854e3782de57b98aa5d09d/thum/c7a7af27-6f5e-4391-9264-10c8b400cb98.png?h=732&w=548&f=jpg" alt="">
+                                <div class="img_box">
+                                    <div class="badge_like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <defs>
+                                                <filter id="dnscy3nc3a">
+                                                    <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.976471 0 0 0 1.000000 0">
+
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd"><g><g><g><g><g filter="url(#dnscy3nc3a)" transform="translate(-74 -74) translate(0 62) translate(16) translate(8 8) translate(42)"><g><g>
+                                                <path d="M5 .667c-2.025 0-3.667 1.64-3.667 3.666 0 3.667 4.334 7 6.667 7.776 2.333-.776 6.667-4.11 6.667-7.776 0-2.025-1.642-3.666-3.667-3.666-1.24 0-2.337.616-3 1.558C7.337 1.283 6.24.667 5 .667" transform="translate(8 4) translate(0 2)">
+                                                </path>
+                                                <path fill="#222" d="M5 1.333c-1.654 0-3 1.346-3 3 0 3.18 3.842 6.238 6 7.068 2.158-.83 6-3.887 6-7.068 0-1.654-1.346-3-3-3-.975 0-1.893.477-2.455 1.276-.25.354-.84.354-1.09 0-.562-.8-1.48-1.276-2.455-1.276m3 11.442c-.07 0-.142-.011-.21-.034C5.233 11.891.667 8.355.667 4.333.667 1.943 2.61 0 5 0c1.127 0 2.2.44 3 1.207C8.8.44 9.873 0 11 0c2.39 0 4.333 1.944 4.333 4.333 0 4.022-4.566 7.559-7.123 8.408-.068.023-.14.034-.21.034" transform="translate(8 4) translate(0 2)">
+                                                </path></g></g></g></g></g></g></g></g>
+                                        </svg>
+                                        <div>
+                                            359
+                                        </div>
+                                    </div>
+                                    <div class="paly_time">
+                                        01:07:24
+                                    </div>
+                                </div>
+                                <div class="img_info">
+                                    <div class="product_img">
+                                        <img src="https://dhdfh3vybe18.cloudfront.net/product/hanatour/hanatour-952669dbac83440e8da12f3943bc42b7/thum/8e738557-d2a8-45c7-8312-c55c032b3f47.jpg?w=96&h=96&f=jpg" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_name">
+                                            [방송전용상품] 스페인/포르투갈 11일
+                                        </div>
+                                        <div class="product_price">
+                                            2,690,000원~
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-info">
+                                <div class="info-title">
+                                    [핵심관광] 포르투칼/스페인 11일 #4성호텔
+                                </div>
+                                <div class="info-logo">
+                                    <img class="sub_logo" src="./images/logo_sub.jpg" alt="">
+                                    <span>하나투어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item more">
+                            <div class="card_wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <path fill="#fff" d="M14 26.833C6.925 26.833 1.167 21.077 1.167 14 1.167 6.925 6.925 1.167 14 1.167c7.077 0 12.833 5.758 12.833 12.833 0 7.077-5.756 12.833-12.833 12.833" transform="translate(-1408 -412) translate(360 228) translate(924) translate(0 184) translate(124) matrix(-1 0 0 1 28 0)">
+
+                                                                </path>
+                                                                <path fill="#000" d="M18.953 13.125H11.27l3.258-3.258c.456-.457.456-1.194 0-1.65-.456-.456-1.193-.456-1.65 0L7.63 13.466c-.109.108-.194.238-.253.38-.117.285-.117.607 0 .891.06.143.144.272.253.38l5.249 5.25c.227.227.526.341.824.341.3 0 .598-.114.825-.341.456-.457.456-1.194 0-1.65l-3.258-3.259h7.683c.646 0 1.167-.522 1.167-1.166 0-.644-.521-1.167-1.167-1.167" transform="translate(-1408 -412) translate(360 228) translate(924) translate(0 184) translate(124) matrix(-1 0 0 1 28 0)">
+
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <div>더보기</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="live_preview_wrap">
+                <div class="live_preview">
+                    <div class="preview_tit">라이브 미리보기</div>
+                    <a href="">모두보기</a>
+                </div>
+                <div class="preview">
+                    <div>
+                        <div class="preview_img_01"></div>
+                        <div class="preview_info">
+                            <div class="preview_time">내일 밤 8시</div>
+                            <div class="preview_tit">
+                                [얼리버드특가] 싱가포르 5, 6일 #자유일정 #센토사
+                            </div>
+                            <div class="preview_logo">
+                                <img src="./images/logo_sub.jpg" alt="hana_logo">
+                                하나투어
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="preview_img_02"></div>
+                        <div class="preview_info">
+                            <div class="preview_time">내일 밤 8시</div>
+                            <div class="preview_tit">
+                                [얼리버드특가] 싱가포르 5, 6일 #자유일정 #센토사
+                            </div>
+                            <div class="preview_logo">
+                                <img src="./images/logo_sub.jpg" alt="hana_logo">
+                                하나투어
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="live_preview">
+                <div class="preview_tit">큐레이션 카테고리</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="info">
+            <div class="service_info">
+                <div class="service_con">
+                    <div class="sevice_fl">
+                        <dl>
+                            <dt>공지</dt>
+                            <dd>
+                                <하나LIVE> 22년 11월 24일 방송 이벤트 당첨자 안내 (스타벅스 기프티콘)
+                                <a href="">더보기</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="sevice_fr">
+                        <ul class="sns_list">
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_naverblog.png" alt="naverblog">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_kakaoplus.png" alt="kakaoplus">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_youtube.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/sns_kakaostory.png" alt="kakaostory">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_fl">
+                    <div class="link_company">
+                        <ul>
+                            <li>
+                                <a href="">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="">이용약관</a>
+                            </li>
+                            <li>
+                                <a href=""><strong>개인정보처리방침</strong></a>
+                            </li>
+                            <li>
+                                <a href="">여행약관</a>
+                            </li>
+                            <li>
+                                <a href="">해외여행자보험</a>
+                            </li>
+                            <li>
+                                <a href="">마케팅제휴</a>
+                            </li>
+                            <li>
+                                <a href="">공인인증예약센터 검색</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info_company">
+                        <div class="info_wrap">
+                            <div class="info_add">
+                                <span><strong>-(주)하나투어</strong></span>
+                                <span>대표 : 송미선, 육경건</span>
+                                <span>주소 : (03161)서울특별시 종로구 인사동 5길 41</span>
+                            </div>
+                            <div class="info_tel">
+                                <span>사업자등록번호 : 102-81-39440</span>
+                                <span><a href="#">사업자정보확인</a></span>
+                                <span>통신판매업신고번호 : 종로01-1806호</span>
+                                <span>관광사업 등록번호 : 제1993-000006호</span>
+                            </div>
+                            <div class="info_fax">
+                                <span>개인정보 보호책임자 : 채철훈</span>
+                                <span>영업보증보험 : 22억 1천만원 가입</span>
+                                <span>팩스 : 02-734-0392</span>
+                                <span>이메일 : <a href="">15771233@hanatour.com</a></span>
+                            </div>
+                        </div>
+                        <div class="info_customer">
+                            <strong>
+                                <span>
+                                    <img src="./images/ico-callcenter.png" alt="">
+                                    고객센터
+                                </span>
+                                1577-1233
+                            </strong>
+                            <strong>
+                                <span>
+                                    <img src="./images/ico-callcenter.png" alt="">
+                                    해외항공권문의
+                                </span>
+                                1899-1833
+                            </strong>
+                        </div>
+                        <p class="info_guide">
+                                ※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.<br>
+                                ※ 하나투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.
+                        </p>
+                        <p class="copyright">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+                <div class="company_fr">
+                    
+                </div>
+                <script src="js/hanalive.js"></script>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
